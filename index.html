@@ -9,7 +9,7 @@
     <body>
         <div id="vue-app">
             <!-- bag image -->
-            <div id="bag" v-bind:class="{ burst: ended }"></div>
+            <div v-on:click="punch" id="bag" v-bind:class="{ burst: ended }"></div>
 
             <!-- bag health bar -->
             <div id="bag-health">

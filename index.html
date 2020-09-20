@@ -18,11 +18,30 @@
 
             <!-- game control buttons -->
             <div id="controls">
-                <button v-on:click="punch" v-show="!ended">Punch</button>
+                    
+
                 <button v-on:click="restart">Restart</button>
             </div>
         </div>
+<audio id="myAudio">
+    
+    <source src="PunchingBag.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  
     </body>
+
+    <script src="app.js"></script>
+    <script>
+        var x = document.getElementById("myAudio"); 
+        
+        function playAudio() { 
+            if (x.paused) 
+                x.play(); 
+            else 
+                 x.pause(); 
+            } 
+    </script>
 
     <script src="app.js"></script>
 </html>
